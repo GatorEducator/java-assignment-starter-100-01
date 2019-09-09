@@ -1,0 +1,55 @@
+---
+name: java-assignment-solution-100-01
+break: true
+indent: 4
+---
+
+# GatorGrader configuration file from the following example repository:
+# https://github.com/GatorEducator/java-assignment-solution-100-01
+
+# Learn more about GatorGrader and its supported checks by visiting this web site:
+# https://github.com/GatorEducator/gatorgrader
+
+# Explanation:
+# --> a check without an "--exact" runs a count for an entity as an "at least"
+# --> checks below a file in a specified directory are for that specific file and directory
+# --> checks that appear stand-alone are for an entire Git repository
+
+# --> check the source code for various characteristics
+src/main:
+    java:
+        labone/DisplayOutput.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 2
+            CountMultipleLineComments --language Java --count 2
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+            MatchFileFragment --fragment "import java.util.Date" --count 1 --exact
+            MatchFileFragment --fragment "new Date()" --count 1 --exact
+            MatchFileRegex --regex "println\((.)*\)" --count 1 --exact
+
+# --> check the technical writing for various characteristics
+writing/reflection.md:
+    ConfirmFileExists
+    CountFileWords --count 300
+    CountMarkdownTags --tag "heading" --count 6 --exact
+    CountMarkdownTags --tag "code" --count 3 --exact
+    CountMarkdownTags --tag "code_block" --count 1 --exact
+    CountMarkdownTags --tag "list" --count 1 --exact
+    MatchFileFragment --fragment "Add Your Name Here" --count 0 --exact
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+CountCommits --count 10
+
+# --> check that the program executes correctly and produces exactly 4 lines of output
+ExecuteCommand --command "gradle build"
+ExecuteCommand --command "gradle -q --console plain run"
+CountCommandOutput --command "gradle -q --console plain run" --count 4 --exact
+
+# --> check that the program produces the output sentences in this order:
+# Gregory M. Kapfhammer Fri Sep 06 01:31:11 GMT 2019
+# Hello World.
+# Gradle is Great.
+# Docker is Dynamite.
+# Note: this check's focus is on the three lines after the name and the date
+MatchCommandRegex --command "gradle -q --console plain run" --count 1 --regex "Hello\s+\w+\.(\n)Gradle(\s+\w+)*\.(\n)Docker(\s+\w+)*\." --exact
