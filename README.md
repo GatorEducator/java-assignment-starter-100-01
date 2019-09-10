@@ -293,9 +293,9 @@ assesses:
 
 Since this repository is a starter for a project,
 [GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated checks
-pass will not pass correctly and the tool will produce the output like the
-following in addition to returning a non-zero exit code (which you can access by
-typing the command `echo $?`).
+pass will not pass correctly and the tool will produce output like the following
+in addition to returning a non-zero exit code (which you can access by typing
+the command `echo $?`).
 
 ```
 -~-  FAILURES  -~-
@@ -345,10 +345,10 @@ git pull download master
 
 This second command can be run whenever the maintainers needs to provide you
 with new source code for this assignment. However, please note that, if you have
-edited the files that the we updated, running the previous command may lead to
-Git merge conflicts. If this happens, you may need to manually resolve them with
-the help of the instructor or a student technical leader. Finally, please note
-that the [Gradle plugin](https://github.com/GatorEducator/gatorgradle) for
+edited the files that we updated, running the previous command may lead to Git
+merge conflicts. If this happens, you may need to manually resolve them with the
+help of the instructor or a student technical leader. Finally, please note that
+the [Gradle plugin](https://github.com/GatorEducator/gatorgradle) for
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) will automatically
 download the newest version of GatorGrader.
 
@@ -427,10 +427,11 @@ a student receives on this assignment will have the following components:
 - **Travis CI Build Status**: Since additional checks on the source code and/or
   technical writing may be encoded in Travis CI's actions and, moreover, all of
   the GatorGrader checks are also run in Travis CI, students will receive a
-  checkmark grade if their builds pass and a green &#x2714; appears in their
-  GitHub commit log instead of a red &#x2717;. As with the previous grading
-  component, students are encouraged to repeatedly revise their source code and
-  technical writing in an attempt to get their Travis CI build to pass.
+  checkmark grade if their last before-the-deadline build passes and a green
+  &#x2714; appears in their GitHub commit log instead of a red &#x2717;. As with
+  the previous grading component, students are encouraged to repeatedly revise
+  their source code and technical writing in an attempt to get their Travis CI
+  build to pass.
 
 - **Mastery of Technical Writing**: Students will also receive a checkmark grade
   when the responses to the technical writing questions presented in the
