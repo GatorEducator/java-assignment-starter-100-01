@@ -178,7 +178,7 @@ docker run --rm --name dockagator \
   gatoreducator/dockagator
 ```
 
-Here are some additional commands that you may need to use when using Docker:
+Here are some additional commands that you may need to run when using Docker:
 
 * `docker info`: display information about how Docker runs on your workstation
 * `docker images`: show the Docker images installed on your workstation
@@ -291,7 +291,7 @@ assesses:
 - The reflection.md in writing has exactly 3 of the `code` tag
 - The reflection.md in writing has exactly 6 of the `heading` tag
 
-Since this repository contains is a starter for a project,
+Since this repository is a starter for a project,
 [GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated checks
 pass will not pass correctly and the tool will produce the output like the
 following in addition to returning a non-zero exit code (which you can access by
