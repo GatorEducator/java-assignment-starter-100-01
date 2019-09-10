@@ -3,7 +3,7 @@
 GatorGrader example that contains a starter to a Java programming project:
 https://github.com/GatorEducator/java-assignment-starter-100-01
 
-This is companion "solution" repository (i.e., the repository used by instructors):
+This is the companion "solution" repository (i.e., the repository used by instructors):
 https://github.com/GatorEducator/java-assignment-solution-100-01
 
 Learn more about GatorGrader and its supported checks by visiting this web site:
@@ -49,11 +49,11 @@ science class that uses the Java programming language. The Travis CI builds for
 this repository will pass, as evidenced by a green &#x2714; instead of a red
 &#x2717; appearing in the commit logs. An instructor would use this repository
 to create a "starter" repository with purposefully omitted features that a
-student would create in order to achieve the stated learning objectives. Please
-bear in mind that much of the content in this document is written in its current
-form under the assumption that it will also accompany the "starter" repository
-that an instructor shares with a student through the use of [GitHub
-Classroom](https://classroom.github.com/).
+student would then need to add in order to achieve the stated learning
+objectives. Please bear in mind that much of the content in this document is
+written in its current form under the assumption that it will also accompany the
+"starter" repository that an instructor shares with a student through the use of
+[GitHub Classroom](https://classroom.github.com/).
 
 This assignment requires a programmer to implement and test a Java program,
 called `DisplayOutput`, that will produce four lines of output. The first line
@@ -291,15 +291,36 @@ assesses:
 - The reflection.md in writing has exactly 3 of the `code` tag
 - The reflection.md in writing has exactly 6 of the `heading` tag
 
-If [GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated
-checks pass correctly, the tool will produce the output like the following in
-addition to returning a zero exit code (which you can access by typing the
-command `echo $?`).
+Since this repository contains is a starter for a project,
+[GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated checks
+pass will not pass correctly and the tool will produce the output like the
+following in addition to returning a non-zero exit code (which you can access by
+typing the command `echo $?`).
 
 ```
-        ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-        ┃ Passed 20/20 (100%) of checks for java-assignment-solution-100-01! ┃
-        ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+-~-  FAILURES  -~-
+
+✘  Repository has at least 10 commit(s)
+   ➔  Found 8 commit(s) in the Git repository
+✘  The reflection.md in writing has at least 300 word(s) in total
+   ➔  Found 56 word(s) in total of file reflection.md
+✘  The DisplayOutput.java in src/main/java/labone has exactly 0 of the 'TODO' fragment
+   ➔  Found 3 fragment(s) in the DisplayOutput.java or the output
+✘  The DisplayOutput.java in src/main/java/labone has exactly 1 of the 'import java.util.Date' fragment
+   ➔  Found 0 fragment(s) in the DisplayOutput.java or the output
+✘  The DisplayOutput.java in src/main/java/labone has exactly 1 of the 'new Date()' fragment
+   ➔  Found 0 fragment(s) in the DisplayOutput.java or the output
+✘  The reflection.md in writing has exactly 1 of the 'code_block' tag
+   ➔  Found 0 tag(s) in the reflection.md file
+✘  The DisplayOutput.java in src/main/java/labone has exactly 0 of the 'Add Your Name Here' fragment
+   ➔  Found 2 fragment(s) in the DisplayOutput.java or the output
+✘  The command output has exactly 1 match(es) of the 'Hello\\s+\\w+\\.(\\n)Gradle(\\s+\\w+)*\\.(\\n)Docker(\\s+\\w+)*\\.' regular expression
+   ➔  Found 0 match(es) of the regular expression in output
+
+
+        ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+        ┃ Passed 12/20 (60%) of checks for java-assignment-solution-100-01! ┃
+        ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
 
 ## Downloading Project Updates
