@@ -6,7 +6,7 @@ package labone;
  * The first line displays the name of the programmer and the date. Each one of
  * the next three lines displays a single statement created by the programmer.
  *
- * <p>Bugs: This program has no known bugs.
+ * <p>Bugs: This program has no known bugs, except those purposefully inserted.
  *
  * @author Add Your Name Here
  */
