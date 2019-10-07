@@ -270,7 +270,10 @@ your submission must pass the following checks that
 [GatorGrader](https://github.com/GatorEducator/gatorgrader) automatically
 assesses:
 
-- Repository has at least 10 commit(s)
+- The command `gradle build` executes correctly
+- The command `gradle -q --console plain run` executes correctly
+- The command output has exactly 1 match(es) of the `Hello\\s+\\w+\\.(\\n)Gradle(\\s+\\w+)*\\.(\\n)Docker(\\s+\\w+)*\\.` regular expression
+- The command output has exactly 4 lines
 - The DisplayOutput.java in src/main/java/labone has at least 2 multiple-line Java comment(s)
 - The DisplayOutput.java in src/main/java/labone has at least 2 single-line Java comment(s)
 - The DisplayOutput.java in src/main/java/labone has exactly 0 of the `Add Your Name Here` fragment
@@ -278,10 +281,6 @@ assesses:
 - The DisplayOutput.java in src/main/java/labone has exactly 1 match(es) of the `println\\((.)*\\)` regular expression
 - The DisplayOutput.java in src/main/java/labone has exactly 1 of the `import java.util.Date` fragment
 - The DisplayOutput.java in src/main/java/labone has exactly 1 of the `new Date()` fragment
-- The command `gradle -q --console plain run` executes correctly
-- The command `gradle build` executes correctly
-- The command output has exactly 1 match(es) of the `Hello\\s+\\w+\\.(\\n)Gradle(\\s+\\w+)*\\.(\\n)Docker(\\s+\\w+)*\\.` regular expression
-- The command output has exactly 4 lines
 - The file DisplayOutput.java exists in the src/main/java/labone directory
 - The file reflection.md exists in the writing directory
 - The reflection.md in writing has at least 300 word(s) in total
@@ -290,6 +289,7 @@ assesses:
 - The reflection.md in writing has exactly 1 of the `list` tag
 - The reflection.md in writing has exactly 3 of the `code` tag
 - The reflection.md in writing has exactly 6 of the `heading` tag
+- The repository has at least 10 commit(s)
 
 Since this repository is a starter for a project,
 [GatorGrader's](https://github.com/GatorEducator/gatorgrader) automated checks
