@@ -19,6 +19,11 @@ buildscript {
   }
 }
 
+//please run after gradle build
+plugins {
+  id 'com.github.sherter.google-java-format' version '0.8'
+}
+
 // apply the version of the gradle plugin
 apply plugin: 'java'
 apply plugin: 'org.gatored.gatorgradle'
