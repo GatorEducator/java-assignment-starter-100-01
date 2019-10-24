@@ -220,6 +220,7 @@ build`. Here are some other commands that you can type:
 * `gradle clean`: clean the project of all the derived files
 * `gradle check`: check the quality of the code using Checkstyle
 * `gradle build`: create the bytecode from the Java source code
+* `gradle goJF`:  reformat the source code according to Java StyleGuide
 * `gradle run`: run the Java program in the command-line
 * `gradle tasks`: display details about the Gradle system
 
