@@ -332,7 +332,7 @@ updates, then you can type this command in the main directory for this
 assignment:
 
 ```
-git remote add download git@github.com:GatorEducator/java-assignment-starter-100-01
+git remote add download git@github.com:GatorEducator/java-assignment-starter-100-01.git
 ```
 
 You should only need to type this command once; running the command additional
